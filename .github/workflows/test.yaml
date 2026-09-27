@@ -12,3 +12,6 @@ jobs:
           who-to-greet: "Clouds"
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+
+      - name: Hello world composite action with nested docker subaction
+        uses: "cloudsftp/nested-action-example@latest"
